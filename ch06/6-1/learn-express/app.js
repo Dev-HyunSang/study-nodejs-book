@@ -50,8 +50,8 @@ app.use((req, res, next) => {
 app.use((err, req, res, next) => {
     console.error(err);
     res.status(500).send('오류 발생, 하지만 알려줄 수는 없음!');
-})
+});
 
 app.listen(app.get('port'), () => {
     console.log('listing server on http://localhost:3000')
-})
+});
